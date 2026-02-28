@@ -15,7 +15,7 @@
   "compatibility": {
     "minimum": "11",
     "verified": "11",
-    "maximum": "11"
+    "maximum": "15"
   },
   "url": "https://github.com/kirillstarkov/fixed-dice-roller",
   "manifest": "https://github.com/kirillstarkov/fixed-dice-roller/releases/download/latest/module.json",
