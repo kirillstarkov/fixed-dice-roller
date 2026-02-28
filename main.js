@@ -21,18 +21,16 @@ Hooks.once('ready', () => {
 
   const originalEvaluate = DiceTerm.prototype.evaluate;
 
-  DiceTerm.prototype.evaluate = function(options = {}) {
-    console.log(options)
-
-    originalEvaluate.call(this, options);
+  DiceTerm.prototype.evaluate = async function(options = {}) {
+    await originalEvaluate.call(this, options);
     if(game.user.isGM) {
       const dieType = this.getDieType();
       const fixedValue = game.settings.get('fixed-dice-roller', dieType);
       if(fixedValue > 0 && fixedValue <= this.faces) {
         this.results = this.results.map(r => ({...r, result: fixedValue}));
-        this.values = this.values.map(() => fixedValue)
       }
     }
+    return this;
   };
 
   DiceTerm.prototype.getDieType = function() {

@@ -14,7 +14,7 @@
   "styles": [],
   "compatibility": {
     "minimum": "11",
-    "verified": "11",
+    "verified": "12",
     "maximum": "15"
   },
   "url": "https://github.com/kirillstarkov/fixed-dice-roller",
