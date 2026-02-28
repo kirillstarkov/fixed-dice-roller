@@ -2,7 +2,7 @@
   "id": "fixed-dice-roller",
   "title": "Fixed Dice Roller",
   "description": "Замінює кидки кубиків GM на задані значення",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     {
       "name": "KStarkov",
